@@ -1,0 +1,28 @@
+<%- include('../partials/header'); %>
+    
+<main class="container mt-5 pt-5">
+    <div class="table-responsive-md" >
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="6" >Tabuada do <%= num %></th>
+                </tr>
+            </thead>
+        <% numeros.map(item =>{ %>
+            
+                <tbody>
+                    <tr>
+                        <td scope="col" ><%- item.num; %></td> 
+                        <td scope="col" >X</td> 
+                        <td scope="col"><%- item.i %></td> 
+                        <td scope="col" >=</td>
+                        <td scope="col" ><%- item.resultado %></td>
+                    </tr>
+                </tbody>
+            </thead>
+        <% }) %>
+        </table>
+    </div>
+</main>
+
+<%- include('../partials/footer'); %>

@@ -1,0 +1,18 @@
+<%- include('../partials/header'); %>
+    
+<main class="container mt-5 pt-5">
+    <p>Escolha um número</p>
+    <% numeros.map(i =>{ %>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+                        <a href="/tabuada/do/<%- i %>">Tabuada do <%- i %></a>
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    <% }) %>
+</main>
+
+<%- include('../partials/footer'); %>
